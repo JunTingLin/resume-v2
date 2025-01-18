@@ -26,37 +26,59 @@ export default function Home() {
           className="rounded-full cursor-pointer hover:grayscale mb-5"
           priority
         />
-        <h1 className="text-2xl font-bold">Adarsha Acharya</h1>
+        <h1 className="text-2xl font-bold">Jun-Ting Lin</h1>
 
         <div className="text-gray-700 dark:text-gray-300">
           <p className="mt-4">
-            I’m a fullstack software engineer specializing in building scalable
-            web applications having rich user interface using javascript.
-          </p>
-          <p className="mt-4 mb-4">
-            Over the years, I&apos;ve worked on multiple startups to build
-            end-to-end products in insurance, game-tech, and video streaming
-            domains, and have actively contributed to various open source
-            projects. Currently, I&apos;m building iGaming solutions at &nbsp;
+            I am currently pursuing a Master’s degree in Computer Science at the 
             <a
-              href="https://mindworks.xyz/"
+              href="https://www.inm.ntu.edu.tw/"
               target="_blank"
               className="border-b inline-block"
             >
-              mindworks.xyz
+              Graduate Institute of Networking and Multimedia
             </a>
-            .
+            , &nbsp;
+            <a
+              href="https://www.ntu.edu.tw/"
+              target="_blank"
+              className="border-b inline-block"
+            >
+              National Taiwan University
+            </a>
+          </p>
+
+          <p className="mt-4 mb-4">
+            Under the guidance of Prof. Jyh-Shing Roger Jang in &nbsp;
+            <a
+              href="http://mirlab.org/"
+              target="_blank"
+              className="border-b inline-block"
+            >
+              MIRLab
+            </a>
+            , my research focuses on AI applications in FinTech, such as portfolio optimization,
+            quantitative trading, and pairs trading. I am also involved in a collaborative project
+            between our lab and &nbsp;
+            <a
+              href="https://www.esunfhc.com/"
+              target="_blank"
+              className="border-b inline-block"
+            >
+              E.SUN Financial Holding
+            </a>
+            &nbsp; to enhance the integration of AI and finance.
           </p>
 
           <p className="mb-4">
-            If you&apos;d like to collaborate, please&nbsp;
+            If you are interested in any form of collaboration, please feel free to reach out via &nbsp;
             <a
               href="mailto:adarshaofficial@gmail.com"
               className="border-b inline-block"
             >
-              send me an email
+              email
             </a>
-            &nbsp;or reach out on any of my social handles.
+            &nbsp; or any of my social media channels.
           </p>
         </div>
 

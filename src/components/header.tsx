@@ -12,12 +12,15 @@ const navItems = {
   "/": {
     name: "home",
   },
-  "/blog": {
-    name: "blog",
+  "/about": {
+    name: "about",
   },
   "/projects": {
     name: "projects",
   },
+  "/blog": {
+    name: "blog",
+  }
 };
 
 export function Header() {
