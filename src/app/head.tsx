@@ -1,24 +1,29 @@
 export default function Head() {
   return (
     <>
+      {/* Apple Touch Icon (iPhone, iPad) */}
       <link
         rel="apple-touch-icon"
-        sizes="76x76"
-        href="/_static/favicons/apple-touch-icon.png"
+        sizes="180x180"
+        href="/_static/favicons/apple-icon.png"
       />
+      {/* Favicon for most modern desktop browsers */}
       <link
         rel="icon"
         type="image/png"
         sizes="32x32"
         href="/_static/favicons/favicon-32x32.png"
       />
+      {/* ICO Fallback */}
       <link
-        rel="icon"
-        type="image/png"
-        sizes="16x16"
-        href="/_static/favicons/favicon-16x16.png"
+        rel="shortcut icon"
+        href="/_static/favicons/favicon.ico"
       />
-      <link rel="manifest" href="/_static/favicons/site.webmanifest" />
+      {/* PWA manifest */}
+      <link
+        rel="manifest"
+        href="/_static/favicons/manifest.json"
+      />      
       <link
         rel="mask-icon"
         href="/_static/favicons/safari-pinned-tab.svg"

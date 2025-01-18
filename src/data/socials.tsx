@@ -1,7 +1,9 @@
 import {
   GitHubIcon,
+  FacebookIcon,
   InstagramIcon,
   LinkedInIcon,
+  CredlyIcon
 } from "../components/icons";
 
 export const SOCIALS = [
@@ -16,8 +18,18 @@ export const SOCIALS = [
     icon: LinkedInIcon,
   },
   {
+    label: "Facebook",
+    href: "https://www.facebook.com/profile.php?id=100009889784302",
+    icon: FacebookIcon,
+  },
+  {
     label: "Instagram",
     href: "https://www.instagram.com/timothy_lin_91218/",
     icon: InstagramIcon,
+  },
+  {
+    label: "Credly",
+    href: "https://www.credly.com/users/jun-ting-lin.c68e8d13",
+    icon: CredlyIcon,
   },
 ];
