@@ -26,7 +26,7 @@ export default function Projects() {
         </div>
       </section>
 
-      <section className="py-10">
+      {/* <section className="py-10">
         <h1 className="mb-4 text-2xl font-bold tracking-tighter">Tools</h1>
 
         <div role="list" className="grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -57,7 +57,7 @@ export default function Projects() {
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
     </React.Fragment>
   );
 }

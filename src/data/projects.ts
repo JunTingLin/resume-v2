@@ -60,35 +60,12 @@ export const WEB_APPS = [
 
 export const TOOLS = [
   {
-    title: "states-nepal",
-    repo: "https://github.com/adarshaacharya/states-nepal",
-    external: "https://www.npmjs.com/package/states-nepal",
+    title: "Sample Tool 1",
+    repo: "https://github.com/",
+    external: "https://www.npmjs.com/",
     description:
-      "npm package to get the dataset about different administrative division of Nepal.",
+      "This is a sample tool description. This is a sample tool description. This is a sample tool description.",
     techs: ["npm-package"],
   },
-  {
-    title: "aaja (आज)",
-    repo: "https://github.com/adarshaacharya/aaja",
-    external: "https://www.npmjs.com/package/aaja",
-    description:
-      "Cli tool to get today's nepali date, tithi, public events and current time.",
-    techs: ["npm-package"],
-  },
-  {
-    title: "ApiHub",
-    repo: "https://github.com/adarshaacharya/ApiHub",
-    external:
-      "https://marketplace.visualstudio.com/items?itemName=AadarshaAcharya.api-hub",
-    description:
-      "VS Code extension to get free third party api url on different categories.",
-    techs: ["vscode-extension"],
-  },
-  {
-    title: "shitcommits",
-    repo: "https://github.com/adarshaacharya/shitcommits",
-    external: "https://www.npmjs.com/package/shitcommits",
-    description: "Cli tool to make git commits with not-so perfect messges.",
-    techs: ["npm-package"],
-  },
+  
 ] as const;
