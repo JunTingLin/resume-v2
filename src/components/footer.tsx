@@ -8,11 +8,11 @@ export function Footer() {
       <p className="text-gray-500  dark:text-gray-400 text-sm">
         © {new Date().getFullYear()}&nbsp;
         <a
-          href={siteMetadata.social.x}
+          href={siteMetadata.social.email}
           target="_blank"
           rel="noopener noreferrer"
         >
-          Adarsha Acharya.
+          JunTing Lin.
         </a>
         &nbsp; All rights reserved.
       </p>

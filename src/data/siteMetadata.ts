@@ -24,7 +24,7 @@ export const siteMetadata = {
     "Research",
   ],
   social: {
-    email: "junting0218@gmail.com",
+    email: "mailto:support@junting.info",
     linkedinLink: `https://www.linkedin.com/in/junting-lin-367339247`,
     githubLink: `https://github.com/JunTingLin`,
   },

@@ -1,10 +1,10 @@
 import { GitHubIcon } from "@/components/icons";
 import { SocialLink } from "@/components/social-link";
-import { WEB_APPS } from "@/data/projects";
+import { PROJECTS } from "@/data/projects";
 import Image from "next/image";
 
 type Props = {
-  project: (typeof WEB_APPS)[number];
+  project: (typeof PROJECTS)[number];
 };
 
 export const ProjectCard = ({ project }: Props) => {
@@ -29,16 +29,34 @@ export const ProjectCard = ({ project }: Props) => {
           {project.description}
         </div>
         <div className="z-10 mb-6 mt-6 flex flex-wrap gap-1 ">
-          {project.tags.map((techStackItem) => (
+          {project.tools.map((techStackItem) => (
             <p
-              className="hover:text-primary dark:hover:text-primary inline-flex items-center rounded-full bg-zinc-100 px-2.5 py-0.5 text-xs leading-4 text-zinc-600 dark:bg-zinc-800 dark:text-zinc-200"
+              className="inline-block bg-blue-100 text-blue-800
+                             px-2 py-0.5 text-xs rounded-full"
               key={techStackItem}
             >
               {techStackItem}
             </p>
           ))}
         </div>
-        <div className="flex items-center">
+
+        {project.highlights && project.highlights.length > 0 && (
+          <div className="z-10 mt-4">
+            <div className="flex flex-wrap gap-2">
+              {project.highlights.map((item) => (
+                <span
+                  key={item}
+                  className="inline-block bg-yellow-100 text-yellow-800
+                             px-2 py-0.5 text-xs rounded-full"
+                >
+                  {item}
+                </span>
+              ))}
+            </div>
+          </div>
+        )}
+        
+        <div className="flex items-center pt-4">
           <SocialLink
             icon={GitHubIcon}
             href={project.repo}

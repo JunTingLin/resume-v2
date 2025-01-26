@@ -1,71 +1,80 @@
-export const WEB_APPS = [
+export const PROJECTS = [
   {
-    title: "Mentor Labs",
-    tags: ["Typescript", "React", "Redux Toolkit", "Nodejs", "PostgreSQL"],
+    title: "Stock Automatic Trading Robot for Taiwan Market",
+    repo: "https://github.com/JunTingLin/stock-analysis",
+    thumbnail: "/_static/projects/Stock Automatic Trading Robot for Taiwan Market.webp",
     description:
-      "Apply for mentorship to the top mentors recommended by our powerful algorithm based on your profile. Enjoy one-to-one live mentorship in our interactive video streaming labs for free.",
-    thumbnail: "/_static/projects/mentorlabs.png",
-    repo: "https://github.com/adarshaacharya/MentorLabs",
+      "This project uses FinLab’s real-time data to design and backtest trading strategies. Results, including account performance and monthly returns, are compiled into HTML reports and delivered via LINE Notify.",
+    highlights: [],
+    tools: ["Python,", "FinLab,", "TA-Lib", "Plotly", "Flask"],
   },
   {
-    title: "CS Overflow",
-    repo: "https://github.com/adarshaacharya/CsOverflow",
-    thumbnail: "/_static/projects/csoverflow.png",
+    title: "Taiwan Insider Monitor",
+    repo: "https://github.com/JunTingLin/insider-stock",
+    thumbnail: "/_static/projects/Taiwan Insider Monitor.webp",
     description:
-      "Q/A forum for Computer Science and Engineering students. Ask a question, contribute an answer and upvote your favourite one.",
-    tags: ["Typescript", "React", "Redux", "Nodejs", "PostgreSQL"],
+      "Automates insider trading data extraction from the Taiwan Stock Exchange, focusing on share increases and their market value. Results are saved monthly as Excel files.",
+    highlights: [],
+    tools: ["requests", "BeautifulSoup", "twstock"],
   },
   {
-    title: "Pass Man",
-    repo: "https://github.com/adarshaacharya/PassMan",
-    demo: "https://passmanager.vercel.app/",
-    thumbnail: "/_static/projects/passman.png",
+    title: "Automated Recognition",
+    repo: "https://github.com/JunTingLin/MODA_company_OCR",
+    thumbnail: "/_static/projects/Automated Recognition.webp",
     description:
-      "Cloud based password manager, create vault for personal and business purpose and store the credentials of different type. Credentials are hashed using AES256 algorithm, and one way hashing is done using Scrypt algorithm.",
-    tags: ["Next.js", "Next Auth", "Prisma", "Docker", "Chakra UI"],
+      "Processes and analyzes PDFs and images, including tax forms, certificates, and bid documents.",
+    highlights: ["Ministry of Economic Affairs, Taiwan"],
+    tools: ["Pillow", "OpenCV", "PyMuPDF", "pytesseract", "Google Cloud Vision", "Qt5"],
   },
   {
-    title: "Code Treats",
-    repo: "https://github.com/adarshaacharya/CodeTreats",
-    thumbnail: "/_static/projects/codetreats.png",
+    title: "MedBag Checker: A Mobile Application for Preventing Drug Interactions with Smart Medicine Box Development",
+    repo: "https://github.com/JunTingLin/drug_android_frontend",
+    thumbnail: "/_static/projects/MedBag Checker.webp",
     description:
-      "In-browser IDE for running, collaborating and saving code snippets. Code Treats supports 10+ languages and 15+ beautiful themes with VS code like text editor. Multiple users can sit on same room, collaborate and talk on real-time.",
-    tags: ["Typescript", "React", "Nodejs", "MongoDB", "Socket"],
+      "A smart app integrated with a medicine box to ensure drug safety by checking interactions using real-time web scraping and cached databases. Features include medication reminders, intuitive UI, and app-controlled compartments to prevent misuse.",
+    highlights: [
+      "Project Leader",
+      "NSTC ’23 Funded",
+      "2nd in MIS ’23",
+      "Wanrun ’23 Finalist",
+      "MOE Innovation"
+    ],
+    tools: ["Typescript", "React", "Nodejs", "MongoDB", "Socket"],
   },
   {
-    title: "E-Complaints",
-    repo: "https://github.com/adarshaacharya/E-Complaints",
-    thumbnail: "/_static/projects/ecomplaints.png",
+    title: "Classroom Reservation System",
+    repo: "https://github.com/JunTingLin/Classroom-reservation-system",
+    thumbnail: "/_static/projects/Classroom Reservation System.webp",
     description:
-      "A public complaint management app that helps user to send the compaints to different government departments, admin can filter & forward complaints to respective department and department officer will reply to that complaint.",
-    tags: ["Node.js", "Express", "Ejs", "MongoDB"],
+      "A reservation system with SSO authentication for enrolled students, allowing single bookings and admin-only bulk scheduling.",
+    highlights: ["GEO @ NCU"],
+    tools: ["Spring Boot", "FullCalendar", "SSO", "MariaDB"],
   },
   {
-    title: "Node.js Blog System",
-    repo: "https://github.com/adarshaacharya/NodejsBlogSystem",
-    thumbnail: "/_static/projects/blog.png",
+    title: "NCU Online Bookstore",
+    repo: "https://github.com/JunTingLin/BookShop-NCU-SA",
+    thumbnail: "/_static/projects/NCU Online Bookstore.webp",
     description:
-      "Boilerplate for starting the blogging using Node JS, MongoDB and Socket for real time update. User can create profile, post & make comments on posts.",
-    tags: ["Node.js", "Express", "Ejs", "MongoDB"],
+      "A platform for NCU students to purchase textbooks categorized by departments (e.g., CS, Finance). Members can browse, search, view details, and add books to a shopping cart with options to modify or delete quantities. Admins have a simple interface for efficient management of members, books, and orders.",
+    highlights: [],
+    tools: ["Java Web", "JSP", "Spring-Security-Crypto", "MySQL"],
   },
   {
-    title: "Tour 360°",
-    repo: "https://github.com/adarshaacharya/Tour360",
-    thumbnail: "/_static/projects/tour360.png",
+    title: "Shopee Competitor Analysis Crawler",
+    repo: "https://github.com/brankhsu/python-project-crawler",
+    thumbnail: "/_static/projects/Shopee Competitor Analysis Crawler.webp",
     description:
-      "Tour 360° is a virtual reality viewing platform build for VisitNepal2020 that helps to view 360 thumbnails & book flights airplane, hotels hotel and guides boy.",
-    tags: ["Php", "MySQL", "Aws"],
+      "This tool helps new Shopee sellers analyze competitors, set optimal prices, estimate revenue, and decide store placement based on data insights.",
+    highlights: [],
+    tools: ["Python,", "Tkinter", "Matplotlib", "Pandas", "Numpy"],
   },
-] as const;
-
-export const TOOLS = [
   {
-    title: "Sample Tool 1",
-    repo: "https://github.com/",
-    external: "https://www.npmjs.com/",
+    title: "Fast Food Ordering System",
+    repo: "https://github.com/JunTingLin/java_ordering_system",
+    thumbnail: "/_static/projects/Fast Food Ordering System.webp",
     description:
-      "This is a sample tool description. This is a sample tool description. This is a sample tool description.",
-    techs: ["npm-package"],
+      "The system reads menus and combos from CSV files for easy updates. It generates detailed receipts for customers and logs all transactions with timestamps.",
+    highlights: ["Project Leader"],
+    tools: ["Java", "Swing"],
   },
-  
 ] as const;

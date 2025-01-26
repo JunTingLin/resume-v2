@@ -73,7 +73,7 @@ export default function Home() {
           <p className="mb-4">
             If you are interested in any form of collaboration, please feel free to reach out via &nbsp;
             <a
-              href="mailto:adarshaofficial@gmail.com"
+              href="mailto:support@junting.info"
               className="border-b inline-block"
             >
               email
