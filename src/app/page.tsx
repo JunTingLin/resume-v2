@@ -30,21 +30,21 @@ export default function Home() {
 
         <div className="text-gray-700 dark:text-gray-300">
           <p className="mt-4">
-            I am currently pursuing a Master’s degree in Computer Science at the 
+            I am currently pursuing a Master’s degree in Computer Science at the{" "} 
             <a
               href="https://www.inm.ntu.edu.tw/"
               target="_blank"
               className="border-b inline-block"
             >
-              Graduate Institute of Networking and Multimedia
+              GINMNTU
             </a>
-            , &nbsp;
+            {" "}@{" "}
             <a
               href="https://www.ntu.edu.tw/"
               target="_blank"
               className="border-b inline-block"
             >
-              National Taiwan University
+              NTU
             </a>
           </p>
 

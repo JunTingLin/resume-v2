@@ -37,7 +37,7 @@ export default function Head() {
       />
       <meta
         name="theme-color"
-        media="(prefers-color-scheme: dark)"
+        media="(prefers-color-scheme: light)"
         content="#000"
       />
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />

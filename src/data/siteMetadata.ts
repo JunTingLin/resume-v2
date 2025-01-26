@@ -16,6 +16,7 @@ export const siteMetadata = {
     "Machine Learning",
     "National Taiwan University",
     "NTU",
+    "GINM",
     "Graduate Institute of Networking and Multimedia",
     "GINM",
     "MIRLab",
