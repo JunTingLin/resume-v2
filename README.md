@@ -17,7 +17,26 @@ Additionally, the design and style of this project were inspired by [Ho Ching-Ru
 
 This application requires Node.js v16.13+.
 
-```bash
-git clone https://github.com/JunTingLin/resume-v2
-pnpm install
-pnpm dev
+1. Clone the repository:
+`git clone https://github.com/JunTingLin/resume-v2`
+
+2. Install dependencies:
+`pnpm install`
+
+3. Start the development server:
+`pnpm dev`
+
+4. Optional: To verify your favicon configuration locally, run:
+`npx realfavicon check 3000`
+This will check your favicon setup on the local development server (port 3000 by default).
+
+### Building for Production
+If deploying to a production environment manually (not using Vercel), you need to:
+
+1. Build the application:
+`pnpm build`
+
+2. Start the production server:
+`pnpm start`
+
+For deployment on Vercel, these steps are handled automatically.
