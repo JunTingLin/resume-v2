@@ -16,7 +16,7 @@ export default function AboutPage() {
         {/* Education Item 1 */}
         <div className="border border-gray-200 dark:border-gray-700 p-6 rounded-lg flex flex-col gap-4 bg-white dark:bg-gray-900 shadow">
           <span className="font-semibold text-lg">
-            Master of Science in{" "}
+            Master in{" "}
             <a
               href="https://www.inm.ntu.edu.tw/"
               target="_blank"
@@ -81,14 +81,14 @@ export default function AboutPage() {
         {/* Education Item 2 */}
         <div className="border border-gray-200 dark:border-gray-700 p-6 rounded-lg flex flex-col gap-4 bg-white dark:bg-gray-900 shadow">
           <span className="font-semibold text-lg">
-            Bachelor of{" "}
+            Bachelor in{" "}
             <a
               href="https://im.mgt.ncu.edu.tw/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 dark:text-gray-400 underline"
             >
-              Business Administration
+              Management Information Systems
             </a>{" "}
             -{" "}
             <a

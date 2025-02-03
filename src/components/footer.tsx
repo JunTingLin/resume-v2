@@ -12,7 +12,7 @@ export function Footer() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          JunTing Lin.
+          Jun-Ting Lin.
         </a>
         &nbsp; All rights reserved.
       </p>

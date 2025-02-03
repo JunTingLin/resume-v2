@@ -26,7 +26,7 @@ export default function Home() {
           className="rounded-full cursor-pointer hover:grayscale mb-5"
           priority
         />
-        <h1 className="text-2xl font-bold">Jun-Ting Lin</h1>
+        <h1 className="text-2xl font-bold">Jun-Ting Lin | 林俊霆</h1>
 
         <div className="text-gray-700 dark:text-gray-300">
           <p className="mt-4">
