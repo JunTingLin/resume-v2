@@ -36,7 +36,7 @@ export default function Home() {
               target="_blank"
               className="border-b inline-block"
             >
-              GINMNTU
+              GINM
             </a>
             {" "}@{" "}
             <a
@@ -55,7 +55,7 @@ export default function Home() {
               target="_blank"
               className="border-b inline-block"
             >
-              MIRLab
+              MIR Lab
             </a>
             , my research focuses on AI applications in FinTech, such as portfolio optimization,
             quantitative trading, and pairs trading. I am also involved in a collaborative project
@@ -93,8 +93,12 @@ export default function Home() {
           ))}
         </div>
         <p className="mt-4 border-b inline-block cursor-pointer">
-          <a href={LINKS.RESUME} target="_blank" rel="noopener noreferrer">
-            View Resume
+          <a href={LINKS.CV_EN} target="_blank" rel="noopener noreferrer">
+            CV (English)
+          </a>
+          <span className="mx-2">|</span> {/* 分隔符號 */}
+          <a href={LINKS.CV_ZH} target="_blank" rel="noopener noreferrer">
+            CV (中文)
           </a>
         </p>
       </section>

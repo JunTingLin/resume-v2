@@ -8,7 +8,6 @@ export const siteMetadata = {
   keywords: [
     "林俊霆",
     "Jun-Ting Lin",
-    "Junting Lin",
     "台灣大學",
     "National Taiwan University",
     "NTU",

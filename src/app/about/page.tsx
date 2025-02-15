@@ -46,7 +46,7 @@ export default function AboutPage() {
                 rel="noopener noreferrer"
                 className="text-gray-600 dark:text-gray-400 underline"
               >
-                (MIRLab)
+                (MIR Lab)
               </a>{" "}
               under the guidance of Prof. Jyh-Shing Roger Jang.
             </li>
@@ -88,7 +88,7 @@ export default function AboutPage() {
               rel="noopener noreferrer"
               className="text-gray-600 dark:text-gray-400 underline"
             >
-              Management Information Systems
+              Management Information System
             </a>{" "}
             -{" "}
             <a
@@ -284,6 +284,9 @@ export default function AboutPage() {
               </li>
               <li>
                 Set up environments within OpenShift on an on-premises private cloud cluster to support development teams.
+              </li>
+              <li>
+                RACI model annotation in reports submitted to the Financial Supervisory Commission (FSC).
               </li>
               <li>
                 Capstone Project: Successfully deployed an AI-powered chatbot to the cloud, responsible for cloud deployment

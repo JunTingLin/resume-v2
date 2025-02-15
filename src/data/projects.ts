@@ -39,7 +39,7 @@ export const PROJECTS = [
       "Wanrun ’23 Finalist",
       "MOE Innovation"
     ],
-    tools: ["Typescript", "React", "Nodejs", "MongoDB", "Socket"],
+    tools: ["Android", "Firebase", "ChatGPT", "Django", "BeautifulSoup", "Selenium", "MySQL", "Arduino"],
   },
   {
     title: "Classroom Reservation System",
