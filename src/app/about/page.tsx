@@ -190,18 +190,28 @@ export default function AboutPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Cert Item 1 */}
           <div className="border border-gray-200 dark:border-gray-700 p-4 rounded-lg flex flex-col gap-2 bg-white dark:bg-gray-900 shadow">
-            <span className="font-medium">AWS Certified Cloud Practition</span>
+            <span className="font-medium">AWS Certified Cloud Practitioner</span>
             <span className="text-sm">Amazon Web Services</span>
             <span className="text-sm">Jul 2023</span>
             <span className="text-sm">ID: 7GNK0DV10FV41P9D</span>
-            <a
-              href="https://www.credly.com/badges/167f3c08-621a-4fcc-84b2-4499437d7a13"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="self-start inline-block border-b border-gray-400 hover:border-gray-600 transition-colors dark:border-gray-500 dark:hover:border-gray-300 text-sm mt-1"
-            >
-              View Badge
-            </a>
+            <div className="flex gap-4 mt-1">
+              <a
+                href="https://www.credly.com/badges/50dfe470-48c0-4336-a8f2-28b02412b50b"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="border-b border-gray-400 hover:border-gray-600 transition-colors dark:border-gray-500 dark:hover:border-gray-300 text-sm"
+              >
+                View Badge
+              </a>
+              <a
+                href="/_static/certifications/AWS Certified Cloud Practitioner certificate.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="border-b border-gray-400 hover:border-gray-600 transition-colors dark:border-gray-500 dark:hover:border-gray-300 text-sm"
+              >
+                View Certificate
+              </a>
+            </div>
           </div>
 
           {/* Cert Item 2 */}
@@ -210,6 +220,16 @@ export default function AboutPage() {
             <span className="text-sm">Oracle</span>
             <span className="text-sm">Jul 2022</span>
             <span className="text-sm">ID: 286101419OCPJEE7AD</span>
+            <div className="flex gap-4 mt-1">
+              <a
+                href="/_static/certifications/Oracle Certified Professional, Java EE 7 Application Developer.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="border-b border-gray-400 hover:border-gray-600 transition-colors dark:border-gray-500 dark:hover:border-gray-300 text-sm"
+              >
+                View Certificate
+              </a>
+            </div>
           </div>
 
           {/* Cert Item 3 */}
@@ -218,14 +238,24 @@ export default function AboutPage() {
             <span className="text-sm">Oracle</span>
             <span className="text-sm">Sep 2021</span>
             <span className="text-sm">ID: 286101419OCPJSE8</span>
-            <a
-              href="https://www.credly.com/badges/334c2e93-b7b5-4db3-ac92-1007f921b9d0"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="self-start inline-block border-b border-gray-400 hover:border-gray-600 transition-colors dark:border-gray-500 dark:hover:border-gray-300 text-sm mt-1"
-            >
-              View Badge
-            </a>
+            <div className="flex gap-4 mt-1">
+              <a
+                href="https://www.credly.com/badges/334c2e93-b7b5-4db3-ac92-1007f921b9d0"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="border-b border-gray-400 hover:border-gray-600 transition-colors dark:border-gray-500 dark:hover:border-gray-300 text-sm"
+              >
+                View Badge
+              </a>
+              <a
+                href="/_static/certifications/Oracle Certified Professional, Java SE 8 Programmer.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="border-b border-gray-400 hover:border-gray-600 transition-colors dark:border-gray-500 dark:hover:border-gray-300 text-sm"
+              >
+                View Certificate
+              </a>
+            </div>
           </div>
 
           {/* Cert Item 4 */}
@@ -234,14 +264,42 @@ export default function AboutPage() {
             <span className="text-sm">Oracle</span>
             <span className="text-sm">Jul 2021</span>
             <span className="text-sm">ID: 286101419OCAJSE8</span>
-            <a
-              href="https://www.credly.com/badges/50dfe470-48c0-4336-a8f2-28b02412b50b"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="self-start inline-block border-b border-gray-400 hover:border-gray-600 transition-colors dark:border-gray-500 dark:hover:border-gray-300 text-sm mt-1"
-            >
-              View Badge
-            </a>
+            <div className="flex gap-4 mt-1">
+              <a
+                href="https://www.credly.com/badges/50dfe470-48c0-4336-a8f2-28b02412b50b"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="border-b border-gray-400 hover:border-gray-600 transition-colors dark:border-gray-500 dark:hover:border-gray-300 text-sm"
+              >
+                View Badge
+              </a>
+              <a
+                href="/_static/certifications/Oracle Certified Associate, Java SE 8 Programmer.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="border-b border-gray-400 hover:border-gray-600 transition-colors dark:border-gray-500 dark:hover:border-gray-300 text-sm"
+              >
+                View Certificate
+              </a>
+            </div>
+          </div>
+
+          {/* Cert Item 5 */}
+          <div className="border border-gray-200 dark:border-gray-700 p-4 rounded-lg flex flex-col gap-2 bg-white dark:bg-gray-900 shadow">
+            <span className="font-medium">Blue certificate, score: 810</span>
+            <span className="text-sm">TOEIC</span>
+            <span className="text-sm">Aug 2021</span>
+            <span className="text-sm">ID: 21055942</span>
+            <div className="flex gap-4 mt-1">
+              <a
+                href="/_static/certifications/多益藍色證書.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="border-b border-gray-400 hover:border-gray-600 transition-colors dark:border-gray-500 dark:hover:border-gray-300 text-sm"
+              >
+                View Certificate
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -289,8 +347,8 @@ export default function AboutPage() {
                 RACI model annotation in reports submitted to the Financial Supervisory Commission (FSC).
               </li>
               <li>
-                Capstone Project: Successfully deployed an AI-powered chatbot to the cloud, responsible for cloud deployment
-                using AWS L4 Load Balancer to ensure high availability and scalability.
+                Capstone Project: Successfully deployed a chatbot to the cloud, responsible for cloud deployment
+                using AWS L7 Load Balancer to ensure high availability and scalability.
               </li>
             </ul>
           </div>

@@ -96,7 +96,7 @@ export default function Home() {
           <a href={LINKS.CV_EN} target="_blank" rel="noopener noreferrer">
             CV (English)
           </a>
-          <span className="mx-2">|</span> {/* 分隔符號 */}
+          <span className="mx-2">|</span>
           <a href={LINKS.CV_ZH} target="_blank" rel="noopener noreferrer">
             CV (中文)
           </a>
