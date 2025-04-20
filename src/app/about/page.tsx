@@ -370,7 +370,7 @@ export default function AboutPage() {
             <span className="text-sm text-gray-500 dark:text-gray-400">
               Institute of Applied Geology
             </span>
-            <span className="text-sm">January 2019 - May 2021</span>
+            <span className="text-sm">Sep 2022 - Jun 2024</span>
 
             <ul className="list-inside list-disc pl-4 text-sm space-y-1">
               <li>Built and managed websites using WordPress.</li>
