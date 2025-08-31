@@ -313,7 +313,57 @@ export default function AboutPage() {
           <span>Work Experience</span>
         </h2>
 
+        
+
         <div className="flex flex-col gap-6">
+          {/* Work Item 1 */}
+          <div className="border border-gray-200 dark:border-gray-700 p-4 rounded-lg flex flex-col gap-2 bg-white dark:bg-gray-900 shadow">
+            <span className="font-medium">
+              Software Development Intern at {" "}
+              <a
+                href="https://www.trendmicro.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block border-b border-gray-400 hover:border-gray-600
+                           transition-colors dark:border-gray-500 dark:hover:border-gray-300"
+              >
+                Trend Micro
+              </a>
+            </span>
+
+            <span className="text-sm text-gray-500 dark:text-gray-400">
+              WSE Team
+            </span>
+
+            <span className="text-sm">Jul 2025 - Aug 2025</span>
+
+            <div className="text-sm space-y-3">
+              <div>
+                <strong>Objectives:</strong>
+                <ol className="list-decimal list-inside pl-4 mt-1 space-y-1">
+                  <li>Monitor how many unique users encountered 5XX errors.</li>
+                  <li>Identify where the errors occurred in the domain request flow.</li>
+                </ol>
+              </div>
+              
+              <div>
+                <strong>Implementation:</strong>
+                <ol className="list-decimal list-inside pl-4 mt-1 space-y-1">
+                  <li><strong>Tracing:</strong> Connected cross-service requests using Correlation ID and Fingerprint.</li>
+                  <li><strong>Logging:</strong> Analyzed microservice access logs through OpenSearch.</li>
+                  <li><strong>Observability:</strong> Built Grafana Dashboards.</li>
+                  <li><strong>AI Agent:</strong> Designed a FastAPI backend to integrate with the company's internal AI server.</li>
+                </ol>
+              </div>
+              
+              <div>
+                <strong>Outcome:</strong>
+                <p className="pl-4 mt-1">Established a comprehensive observability platform that reduced cross-service error troubleshooting time.</p>
+              </div>
+            </div>
+          </div>
+
+
           {/* Work Item 1 */}
           <div className="border border-gray-200 dark:border-gray-700 p-4 rounded-lg flex flex-col gap-2 bg-white dark:bg-gray-900 shadow">
             <span className="font-medium">
@@ -337,18 +387,13 @@ export default function AboutPage() {
 
             <ul className="list-inside list-disc pl-4 text-sm space-y-1">
               <li>
-                Participated in training sessions and meetings on cloud-native platforms, including OpenShift and Anthos,
-                and delivered presentations on Kubernetes (K8s) core components.
+                Attended meetings on cloud-native platforms(OpenShift, Anthos) and presented on Kubernetes (K8s) components.
               </li>
               <li>
-                Set up environments within OpenShift on an on-premises private cloud cluster to support development teams.
+                Set up development environments on a OpenShift cluster.
               </li>
               <li>
-                RACI model annotation in reports submitted to the Financial Supervisory Commission (FSC).
-              </li>
-              <li>
-                Capstone Project: Successfully deployed a chatbot to the cloud, responsible for cloud deployment
-                using AWS L7 Load Balancer to ensure high availability and scalability.
+                Final Project: Deployed a chatbot to the cloud using AWS Layer 7 Load Balancer.
               </li>
             </ul>
           </div>
@@ -447,7 +492,10 @@ export default function AboutPage() {
                   Kubernetes
                 </span>
                 <span className="inline-block bg-green-100 text-green-800 px-3 py-1 text-xs rounded-full">
-                  Git
+                  OpenSearch
+                </span>
+                <span className="inline-block bg-green-100 text-green-800 px-3 py-1 text-xs rounded-full">
+                  Grafana
                 </span>
               </div>
             </li>
