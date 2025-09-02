@@ -61,7 +61,7 @@ export default makeSource({
     rehypePlugins: [
       rehypeSlug,
       [
-        //@ts-expect-error
+        // @ts-ignore - Type compatibility issue between vfile versions
         rehypePrettyCode,
         {
           theme: "one-dark-pro",
