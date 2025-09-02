@@ -59,9 +59,6 @@ export default function AboutPage() {
                 <span className="inline-block bg-blue-100 text-blue-800 px-3 py-1 text-xs rounded-full">
                   Quantitative Trading
                 </span>
-                <span className="inline-block bg-blue-100 text-blue-800 px-3 py-1 text-xs rounded-full">
-                  Pairs Trading
-                </span>
               </div>
             </li>
             <li>
@@ -165,7 +162,7 @@ export default function AboutPage() {
             <li>
               <strong>Societies:</strong>{" "}
               <a
-                href="http://www.phitauphi.org.tw/"
+                href="https://gdg.community.dev/gdg-on-campus-national-central-university-taoyuan-city-taiwan/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 dark:text-gray-400 underline"
@@ -352,7 +349,7 @@ export default function AboutPage() {
                   <li><strong>Tracing:</strong> Connected cross-service requests using Correlation ID and Fingerprint.</li>
                   <li><strong>Logging:</strong> Analyzed microservice access logs through OpenSearch.</li>
                   <li><strong>Observability:</strong> Built Grafana Dashboards.</li>
-                  <li><strong>AI Agent:</strong> Designed a FastAPI backend to integrate with the company's internal AI server.</li>
+                  <li><strong>AI Agent:</strong> Designed a FastAPI backend to integrate with the company&apos;s internal AI server.</li>
                 </ol>
               </div>
               
