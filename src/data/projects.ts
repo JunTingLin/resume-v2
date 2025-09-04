@@ -1,5 +1,14 @@
 export const PROJECTS = [
   {
+    title: "TSMC Cloud Native - Attendance System",
+    repo: "https://github.com/JunTingLin/Attendance-System-API",
+    thumbnail: "/_static/projects/TSMC Cloud Native - Attendance System.png",
+    description:
+      "A cloud-native attendance management system built with Spring Boot backend and Terraform-managed GCP infrastructure. Features include JWT-secured APIs, automated CI/CD with Cloud Build, and deployment on Cloud Run with Cloud SQL integration.",
+    highlights: [],
+    tools: ["Spring Boot", "Spring Security (JWT)", "Swagger", "Terraform", "GCP Cloud Run", "GCP Cloud SQL", "Cloud Build CI/CD"],
+  },
+  {
     title: "Stock Automatic Trading Robot for Taiwan Market",
     repo: "https://github.com/JunTingLin/stock-analysis",
     thumbnail: "/_static/projects/Stock Automatic Trading Robot for Taiwan Market.webp",

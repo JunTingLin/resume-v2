@@ -23,7 +23,7 @@ export default function AboutPage() {
               rel="noopener noreferrer"
               className="text-gray-600 dark:text-gray-400 underline"
             >
-              Computer Science
+              Computer Science(GINM)
             </a>{" "}
             -{" "}
             <a
@@ -85,7 +85,7 @@ export default function AboutPage() {
               rel="noopener noreferrer"
               className="text-gray-600 dark:text-gray-400 underline"
             >
-              Management Information System
+              Management Information System(MIS)
             </a>{" "}
             -{" "}
             <a
@@ -505,7 +505,7 @@ export default function AboutPage() {
                   PyTorch
                 </span>
                 <span className="inline-block bg-green-100 text-green-800 px-3 py-1 text-xs rounded-full">
-                  TensorFlow
+                  AutoML-PyCaret
                 </span>
                 <span className="inline-block bg-green-100 text-green-800 px-3 py-1 text-xs rounded-full">
                   Scikit-learn
