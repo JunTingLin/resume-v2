@@ -57,8 +57,8 @@ export default function Home() {
             >
               MIR Lab
             </a>
-            , my research focuses on AI applications in FinTech, such as portfolio optimization,
-            quantitative trading, and pairs trading. I am also involved in a collaborative project
+            , my research focuses on AI applications in FinTech, such as portfolio optimization and
+            pairs trading. I am also involved in a collaborative project
             between our lab and &nbsp;
             <a
               href="https://www.esunfhc.com/"

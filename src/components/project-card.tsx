@@ -1,4 +1,4 @@
-import { GitHubIcon } from "@/components/icons";
+import { GitHubIcon, YouTubeIcon } from "@/components/icons";
 import { SocialLink } from "@/components/social-link";
 import { PROJECTS } from "@/data/projects";
 import Image from "next/image";
@@ -56,12 +56,19 @@ export const ProjectCard = ({ project }: Props) => {
           </div>
         )}
         
-        <div className="flex items-center pt-4">
+        <div className="flex items-center pt-4 gap-4">
           <SocialLink
             icon={GitHubIcon}
             href={project.repo}
             className="h-6 w-6 flex-none"
           />
+          {project.youtube && project.youtube.trim() !== "" && (
+            <SocialLink
+              icon={YouTubeIcon}
+              href={project.youtube}
+              className="h-6 w-6 flex-none"
+            />
+          )}
         </div>
       </div>
     </div>
