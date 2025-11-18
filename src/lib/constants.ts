@@ -1,6 +1,6 @@
 export const LINKS = {
   CV_EN:
-    "/_static/CV_V7_en.pdf",
+    "/_static/CV_V8_en.pdf",
   CV_ZH:
-    "/_static/CV_V7_zh.pdf",
+    "/_static/CV_V8_zh.pdf",
 };

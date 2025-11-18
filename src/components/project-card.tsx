@@ -28,17 +28,6 @@ export const ProjectCard = ({ project }: Props) => {
         <div className=" z-10 mt-2 text-sm text-gray-500 dark:text-gray-400">
           {project.description}
         </div>
-        <div className="z-10 mb-6 mt-6 flex flex-wrap gap-1 ">
-          {project.tools.map((techStackItem) => (
-            <p
-              className="inline-block bg-blue-100 text-blue-800
-                             px-2 py-0.5 text-xs rounded-full"
-              key={techStackItem}
-            >
-              {techStackItem}
-            </p>
-          ))}
-        </div>
 
         {project.highlights && project.highlights.length > 0 && (
           <div className="z-10 mt-4">
@@ -46,7 +35,7 @@ export const ProjectCard = ({ project }: Props) => {
               {project.highlights.map((item) => (
                 <span
                   key={item}
-                  className="inline-block bg-yellow-100 text-yellow-800
+                  className="inline-block bg-gray-100 text-gray-600 dark:bg-gray-800 dark:text-gray-300
                              px-2 py-0.5 text-xs rounded-full"
                 >
                   {item}

@@ -117,7 +117,7 @@ export default function AboutPage() {
               </div>
             </li>
             <li>
-              <strong>Coursework:</strong>
+              <strong>Course:</strong>
               <div className="mt-2 flex flex-wrap gap-2">
                 <span className="inline-block bg-yellow-100 text-yellow-800 px-3 py-1 text-xs rounded-full">
                   Assembly Language(CSIE)
