@@ -19,6 +19,8 @@
     "@types/node": "20.8.6",
     "@types/react": "18.2.33",
     "@types/react-dom": "18.2.7",
+    "@upstash/ratelimit": "^2.0.8",
+    "@upstash/redis": "^1.37.0",
     "ai": "^6.0.156",
     "autoprefixer": "10.4.15",
     "class-transformer": "^0.5.1",
