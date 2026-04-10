@@ -7,6 +7,12 @@ This is my personal website and blog built using:
 - **Markdown** : [MDX](https://mdxjs.com/) and [Contentlayer](https://contentlayer.dev/)
 - **Deployment** : [Vercel](https://vercel.com/)
 
+## AI Chatbot
+
+This site includes a "digital twin" chatbot at `/chat`, backed by Gemini 2.5 Flash-Lite via the Vercel AI SDK, with Upstash Redis for rate limiting. It reads `src/data/bio.md` on every request, so editing that file updates the chatbot's knowledge without a restart.
+
+See [doc/chatbot-architecture.md](doc/chatbot-architecture.md) for the full design (LLM layer, guardrails, file map, and local dev setup). A visual architecture diagram is in [doc/chatbot-architecture.drawio](doc/chatbot-architecture.drawio).
+
 ## Acknowledgments
 
 This project is built by referencing the open-source repository [adarsha.dev](https://github.com/adarshaacharya/adarsha.dev) by [Adarsha Acharya](https://github.com/adarshaacharya), which is licensed under the [MIT License](https://github.com/adarshaacharya/adarsha.dev/blob/main/LICENSE).
