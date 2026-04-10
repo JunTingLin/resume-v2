@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { TailwindIndicator } from "@/components/tailwind-indicator";
+import { ChatWidget } from "@/components/chat/ChatWidget";
 import { Space_Grotesk } from "next/font/google";
 import { siteMetadata } from "@/data/siteMetadata";
 import Head from "./head";
@@ -77,6 +78,7 @@ export default function RootLayout({
             {children}
             <Footer />
           </main>
+          <ChatWidget />
           <TailwindIndicator />
         </ThemeProvider>
         <GoogleAnalytics gaId={ENV.GOOGLE_ANALYTICS_ID} />
