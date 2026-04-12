@@ -117,6 +117,15 @@ export async function POST(req: Request) {
     return result.toUIMessageStreamResponse();
   } catch (err) {
     const { status, message } = classifyLlmError(err);
+    // Log the real error server-side (visible in Vercel dashboard → Logs,
+    // or local terminal). Never exposed to the browser / F12.
+    console.error("[chat/route] LLM error", {
+      status,
+      sessionId: sessionId ?? "none",
+      ip,
+      errorName: err instanceof Error ? err.constructor.name : "unknown",
+      errorMessage: err instanceof Error ? err.message : String(err),
+    });
     return Response.json({ error: message }, { status });
   }
 }
