@@ -37,4 +37,7 @@ next-env.d.ts
 # contentlayer
 .contentlayer
 
+# local documentation (architecture notes, design docs — not for public repo)
+/doc
+
 .env
