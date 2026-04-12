@@ -46,14 +46,18 @@ export function ChatPanel({ compact = false }: ChatPanelProps) {
     setInput(prompt);
   };
 
-  // Our 429 responses return JSON { error: "..." }; surface that text when available.
+  // Our rate-limit / validation responses return JSON { error: "..." }; surface that text.
+  // Mid-stream errors (e.g. raw Google API messages) are sanitized to a generic fallback
+  // so internal error details are never shown to the user.
   const errorMessage = error
     ? (() => {
         try {
           const parsed = JSON.parse(error.message);
-          return typeof parsed.error === "string" ? parsed.error : error.message;
+          return typeof parsed.error === "string"
+            ? parsed.error
+            : "Something went wrong. Please try again.";
         } catch {
-          return error.message;
+          return "Something went wrong. Please try again.";
         }
       })()
     : null;
