@@ -1,12 +1,21 @@
 export const PROJECTS = [
   {
+    title: "Multimodal Fusion of News Features in Deep Reinforcement Learning Portfolio Optimization",
+    repo: "",
+    youtube: "",
+    thumbnail: "/_static/projects/Trend.png",
+    description:
+      "This study extends VisionTrader by incorporating news information into the Asset Scoring Unit (ASU) through two complementary paths: extracting FinBERT-based sentiment scores as additional input features, and extracting news embeddings to be fused with price-volume representations via multiple fusion strategies — including Concatenation, Gating Mechanism, and Cross-Attention.",
+    highlights: ['E.SUN', 'MIR Lab'],
+  },
+  {
     title: "VisionTrader: Applying Deep Reinforcement Learning to Incorporate Vision Time Series into Portfolio Optimization",
     repo: "https://github.com/JunTingLin/DeepTrader",
     youtube: "",
-    thumbnail: "/_static/projects/VisionTrader.png",
+    thumbnail: "/_static/projects/VisionTrader02.png",
     description:
       "Addresses instability in DRL-based portfolio optimization by incorporating enhanced market features and technical indicators. Uses Vision Transformer (ViT) to capture cross-asset and temporal relationships, demonstrating superior performance and stability across different markets and time periods.",
-    highlights: ['E.SUN', 'MIR Lab'],
+    highlights: ['E.SUN', 'MIR Lab', 'IEEE under review'],
   },
   {
     title: "TSMC Cloud Native: Attendance System",
