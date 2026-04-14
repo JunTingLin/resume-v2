@@ -5,7 +5,7 @@ export const PROJECTS = [
     youtube: "",
     thumbnail: "/_static/projects/Trend.png",
     description:
-      "This study extends VisionTrader by incorporating news information through two complementary paths: extracting FinBERT-based sentiment scores as additional input features, and fusing news embeddings with price-volume representations via Concatenation, Gating Mechanism, and Cross-Attention. Evaluated cross-market generalization of each fusion strategy; ongoing research.",
+      "This study extends VisionTrader by incorporating news information through two complementary paths: extracting FinBERT-based sentiment scores as additional input features, and fusing news embeddings with price-volume representations via Concatenation, Gating Mechanism, and Cross-Attention. Evaluated robustness of each fusion strategy across different time periods; ongoing research.",
     highlights: ['E.SUN', 'MIR Lab'],
   },
   {

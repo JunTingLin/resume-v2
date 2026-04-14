@@ -15,9 +15,7 @@ reflect whatever is in this file after the next build.
 
 ## One-line summary
 
-Master's student at National Taiwan University (GINM), researching AI applications in
-FinTech — portfolio optimization, quantitative trading, and pairs trading. Interested in
-bridging cutting-edge AI with real-world financial technology.
+Master's student at National Taiwan University (GINM) with a broad background in AI research, cloud & DevOps, and backend development. Research focuses on deep reinforcement learning for portfolio optimization (E.SUN industry-academia collaboration). AWS and Oracle Java certified.
 
 ## Education
 
@@ -88,7 +86,7 @@ Built an observability platform to monitor 5XX errors across microservices.
 ## Projects (highlights)
 
 ### Multimodal Fusion of News Features in DRL Portfolio Optimization
-Extends VisionTrader by incorporating news via two paths: FinBERT-based sentiment scores as input features, and news embeddings fused with price-volume representations via Concatenation, Gating Mechanism, and Cross-Attention. Evaluating cross-market generalization; ongoing research.
+Extends VisionTrader by incorporating news via two paths: FinBERT-based sentiment scores as input features, and news embeddings fused with price-volume representations via Concatenation, Gating Mechanism, and Cross-Attention. Evaluated robustness of each fusion strategy across different time periods; ongoing research.
 - **Context:** E.SUN industry cooperation, MIR Lab
 
 ### VisionTrader — Deep Reinforcement Learning for Portfolio Optimization
