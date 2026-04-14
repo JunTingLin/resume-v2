@@ -54,14 +54,14 @@ Built an observability platform to monitor 5XX errors across microservices.
   - Logging: analyzed microservice access logs through OpenSearch
   - Observability: built Grafana dashboards
   - AI Agent: designed a FastAPI backend integrated with the company's internal AI server
-- **Outcome:** Reduced cross-service error troubleshooting time with a unified observability platform
+- **Outcome:** Delivered a working prototype; the team continued development post-internship, significantly reducing cross-service error troubleshooting time
 
 ### Cloud Engineer Intern — Taipei Fubon Commercial Bank (Digital Technology R&D Department)
 **Jul 2024 – Aug 2024**
 
-- Attended meetings on cloud-native platforms (OpenShift, Anthos) and presented on Kubernetes components
-- Set up development environments on an OpenShift cluster
-- Final project: deployed a chatbot to the cloud using an AWS Layer 7 Load Balancer
+- **Objective:** Learn and apply cloud-native technologies (OpenShift, Anthos, Kubernetes) in an enterprise private-cloud environment
+- Delivered a presentation on core Kubernetes components; provisioned OpenShift development environments for engineering teams on an internal private cloud
+- **Outcome:** Final project — deployed a chatbot to the cloud using an AWS Layer 7 Load Balancer configuration
 
 ### Department IT Assistant — National Central University (Institute of Applied Geology)
 **Sep 2022 – Jun 2024**
@@ -83,9 +83,13 @@ Built an observability platform to monitor 5XX errors across microservices.
 - **Languages:** Python (primary), Java, Kotlin, PHP, SQL
 - **Web Development:** Spring, Spring Boot, Spring Security
 - **Cloud & DevOps:** AWS, Docker, Kubernetes, OpenSearch, Grafana
-- **ML & DL:** PyTorch, AutoML (PyCaret), Scikit-learn, Weights & Biases
+- **ML & DL:** PyTorch, Transformers, AutoML (PyCaret), Scikit-learn, Weights & Biases
 
 ## Projects (highlights)
+
+### Multimodal Fusion of News Features in DRL Portfolio Optimization
+Extends VisionTrader by incorporating news via two paths: FinBERT-based sentiment scores as input features, and news embeddings fused with price-volume representations via Concatenation, Gating Mechanism, and Cross-Attention. Evaluating cross-market generalization; ongoing research.
+- **Context:** E.SUN industry cooperation, MIR Lab
 
 ### VisionTrader — Deep Reinforcement Learning for Portfolio Optimization
 Addresses instability in DRL-based portfolio optimization by incorporating enhanced market

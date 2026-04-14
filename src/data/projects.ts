@@ -5,7 +5,7 @@ export const PROJECTS = [
     youtube: "",
     thumbnail: "/_static/projects/Trend.png",
     description:
-      "This study extends VisionTrader by incorporating news information into the Asset Scoring Unit (ASU) through two complementary paths: extracting FinBERT-based sentiment scores as additional input features, and extracting news embeddings to be fused with price-volume representations via multiple fusion strategies — including Concatenation, Gating Mechanism, and Cross-Attention.",
+      "This study extends VisionTrader by incorporating news information through two complementary paths: extracting FinBERT-based sentiment scores as additional input features, and fusing news embeddings with price-volume representations via Concatenation, Gating Mechanism, and Cross-Attention. Evaluated cross-market generalization of each fusion strategy; ongoing research.",
     highlights: ['E.SUN', 'MIR Lab'],
   },
   {

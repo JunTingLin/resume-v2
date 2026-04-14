@@ -19,7 +19,7 @@ export default function Home() {
     <React.Fragment>
       <section className="mb-5">
         <Image
-          src="/_static/me.jpg"
+          src="/_static/me02.jpg"
           width={100}
           height={100}
           alt="avatar"
@@ -30,43 +30,11 @@ export default function Home() {
 
         <div className="text-gray-700 dark:text-gray-300">
           <p className="mt-4">
-            I am currently pursuing a Master’s degree in Computer Science at the{" "} 
-            <a
-              href="https://www.inm.ntu.edu.tw/"
-              target="_blank"
-              className="border-b inline-block"
-            >
-              GINM
-            </a>
-            {" "}@{" "}
-            <a
-              href="https://www.ntu.edu.tw/"
-              target="_blank"
-              className="border-b inline-block"
-            >
-              NTU
-            </a>
+            I am currently pursuing a Master&apos;s degree in Computer Science at the GINM @ NTU.
           </p>
 
           <p className="mt-4 mb-4">
-            Under the guidance of Prof. Jyh-Shing Roger Jang in &nbsp;
-            <a
-              href="http://mirlab.org/"
-              target="_blank"
-              className="border-b inline-block"
-            >
-              MIR Lab
-            </a>
-            , my research focuses on AI applications in FinTech, such as quantitative trading and portfolio optimization. I am also involved in a collaborative project
-            between our lab and &nbsp;
-            <a
-              href="https://www.esunfhc.com/"
-              target="_blank"
-              className="border-b inline-block"
-            >
-              E.SUN Financial Holding
-            </a>
-            &nbsp; to enhance the integration of AI and finance.
+            Under the guidance of Prof. Jyh-Shing Roger Jang in MIR Lab, my research focuses on deep reinforcement learning for portfolio optimization, in collaboration with E.SUN Financial Holding. Beyond research, I have industry experience building observability platforms at Trend Micro and cloud-native infrastructure at Taipei Fubon Bank, with a background spanning AI research, cloud &amp; DevOps, and backend development.
           </p>
 
           <p className="mb-4">
