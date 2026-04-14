@@ -72,6 +72,23 @@ export default function AboutPage() {
                 E.SUN Financial Holding
               </a>
             </li>
+            <li>
+              <strong>Courses:</strong>
+              <div className="mt-2 flex flex-wrap gap-2">
+                <span className="inline-block bg-purple-100 text-purple-800 px-3 py-1 text-xs rounded-full">
+                  Introduction to FinTech
+                </span>
+                <span className="inline-block bg-purple-100 text-purple-800 px-3 py-1 text-xs rounded-full" title="Taught by Prof. Hung-yi Lee (李弘毅), NTU — one of the most renowned ML courses in Taiwan">
+                  Machine Learning (Hung-yi Lee)
+                </span>
+                <span className="inline-block bg-purple-100 text-purple-800 px-3 py-1 text-xs rounded-full">
+                  Computer Vision Practice with Deep Learning (CVPDL)
+                </span>
+                <span className="inline-block bg-purple-100 text-purple-800 px-3 py-1 text-xs rounded-full">
+                  Applied Deep Learning (ADL)
+                </span>
+              </div>
+            </li>
           </ul>
         </div>
 

@@ -26,6 +26,7 @@ bridging cutting-edge AI with real-world financial technology.
 - **Lab:** Multimedia Information Retrieval Lab (MIR Lab), advised by Prof. Jyh-Shing Roger Jang
 - **Research focus:** AI applications in FinTech — portfolio optimization, quantitative trading
 - **Industry cooperation:** E.SUN Financial Holding
+- **Notable coursework:** Introduction to FinTech, Machine Learning (taught by Prof. Hung-yi Lee — one of the most renowned ML educators in Taiwan/Asia), Computer Vision Practice with Deep Learning (CVPDL, taught by Prof. Wen-Huang Cheng — IEEE Fellow 2024, Stanford World's Top 2% Scientists), Applied Deep Learning (ADL, taught by Prof. Yun-Nung Vivian Chen — NTU CSIE, Google Faculty Research Award recipient, Ph.D. from CMU)
 
 ### Bachelor — Management Information Systems (MIS), National Central University
 - **Period:** Sep 2020 – Jun 2024
