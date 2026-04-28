@@ -12,6 +12,7 @@ import Head from "./head";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { ENV } from "@/lib/env";
 import { GoogleAdsense } from "@/components/google-adsense";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const space_grotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -83,6 +84,7 @@ export default function RootLayout({
         </ThemeProvider>
         <GoogleAnalytics gaId={ENV.GOOGLE_ANALYTICS_ID} />
         <GoogleAdsense pId={ENV.ADSENSE_CLIENT_ID} />
+        <SpeedInsights />
       </body>
     </html>
   );
