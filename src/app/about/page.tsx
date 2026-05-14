@@ -1,5 +1,77 @@
 "use client";
 
+import { CertCard, type CertCardProps } from "@/components/cert-card";
+import { OrgLogo } from "@/components/org-logo";
+
+const CERTS: CertCardProps[] = [
+  {
+    logo: "/_static/logos/NVIDIA.jpg",
+    name: "Building LLM Applications With Prompt Engineering",
+    issuer: "NVIDIA",
+    date: "May 2025",
+    id: "k4x5XVScRjeEcqLZ34EQ4Q",
+    links: [
+      { label: "View Certificate", href: "/_static/certifications/NVIDIA Building LLM Applications With Prompt Engineering.pdf" },
+    ],
+  },
+  {
+    logo: "/_static/logos/AWS.jpg",
+    name: "AWS Certified Cloud Practitioner",
+    issuer: "Amazon Web Services",
+    date: "Jul 2023",
+    id: "7GNK0DV10FV41P9D",
+    links: [
+      { label: "View Badge", href: "https://www.credly.com/badges/d4340725-e340-415f-9804-3656fcc551f6" },
+      { label: "View Certificate", href: "/_static/certifications/AWS Certified Cloud Practitioner certificate.pdf" },
+    ],
+  },
+  {
+    logo: "/_static/logos/Oracle.png",
+    name: "Java EE 7 Application Developer",
+    issuer: "Oracle",
+    date: "Jul 2022",
+    id: "286101419OCPJEE7AD",
+    links: [
+      { label: "View Certificate", href: "/_static/certifications/Oracle Certified Professional, Java EE 7 Application Developer.pdf" },
+    ],
+  },
+  {
+    logo: "/_static/logos/Oracle.png",
+    name: "Java SE 8 Programmer OCP",
+    issuer: "Oracle",
+    date: "Sep 2021",
+    id: "286101419OCPJSE8",
+    links: [
+      { label: "View Badge", href: "https://www.credly.com/badges/334c2e93-b7b5-4db3-ac92-1007f921b9d0" },
+      { label: "View Certificate", href: "/_static/certifications/Oracle Certified Professional, Java SE 8 Programmer.pdf" },
+    ],
+  },
+  {
+    logo: "/_static/logos/Oracle.png",
+    name: "Java SE 8 Programmer OCA",
+    issuer: "Oracle",
+    date: "Jul 2021",
+    id: "286101419OCAJSE8",
+    links: [
+      { label: "View Badge", href: "https://www.credly.com/badges/50dfe470-48c0-4336-a8f2-28b02412b50b" },
+      { label: "View Certificate", href: "/_static/certifications/Oracle Certified Associate, Java SE 8 Programmer.pdf" },
+    ],
+  },
+];
+
+const LANGUAGE_CERTS: CertCardProps[] = [
+  {
+    logo: "/_static/logos/TOEIC.png",
+    name: "Blue certificate, score: 810",
+    issuer: "TOEIC",
+    date: "Aug 2021",
+    id: "21055942",
+    links: [
+      { label: "View Certificate", href: "/_static/certifications/多益藍色證書.pdf" },
+    ],
+  },
+];
+
 export default function AboutPage() {
   return (
     <section className="flex flex-col gap-8">
@@ -16,14 +88,7 @@ export default function AboutPage() {
         {/* Education Item 1 */}
         <div className="border border-gray-200 dark:border-gray-700 p-6 rounded-lg flex flex-col gap-4 bg-white dark:bg-gray-900 shadow">
           <div className="flex items-start gap-4">
-            <div className="w-12 h-12 flex-shrink-0 rounded-lg border border-gray-100 dark:border-gray-200 bg-white flex items-center justify-center p-1">
-              <img
-                src="/_static/logos/NTU.jpg"
-                alt="NTU logo"
-                className="w-full h-full object-contain"
-                onError={(e) => { e.currentTarget.parentElement!.style.display = "none"; }}
-              />
-            </div>
+            <OrgLogo src="/_static/logos/NTU.jpg" alt="NTU logo" size="md" />
             <div className="flex flex-col gap-1">
               <span className="font-semibold text-lg">
                 Master in{" "}
@@ -107,14 +172,7 @@ export default function AboutPage() {
         {/* Education Item 2 */}
         <div className="border border-gray-200 dark:border-gray-700 p-6 rounded-lg flex flex-col gap-4 bg-white dark:bg-gray-900 shadow">
           <div className="flex items-start gap-4">
-            <div className="w-12 h-12 flex-shrink-0 rounded-lg border border-gray-100 dark:border-gray-200 bg-white flex items-center justify-center p-1">
-              <img
-                src="/_static/logos/NCU.jpg"
-                alt="NCU logo"
-                className="w-full h-full object-contain"
-                onError={(e) => { e.currentTarget.parentElement!.style.display = "none"; }}
-              />
-            </div>
+            <OrgLogo src="/_static/logos/NCU.jpg" alt="NCU logo" size="md" />
             <div className="flex flex-col gap-1">
               <span className="font-semibold text-lg">
                 Bachelor in{" "}
@@ -231,14 +289,7 @@ export default function AboutPage() {
           {/* Work Item 1 */}
           <div className="border border-gray-200 dark:border-gray-700 p-4 rounded-lg flex flex-col gap-2 bg-white dark:bg-gray-900 shadow">
             <div className="flex items-start gap-3">
-              <div className="w-10 h-10 flex-shrink-0 rounded-lg border border-gray-100 dark:border-gray-200 bg-white flex items-center justify-center p-1">
-                <img
-                  src="/_static/logos/Trend Micro.png"
-                  alt="Trend Micro logo"
-                  className="w-full h-full object-contain"
-                  onError={(e) => { e.currentTarget.parentElement!.style.display = "none"; }}
-                />
-              </div>
+              <OrgLogo src="/_static/logos/Trend Micro.png" alt="Trend Micro logo" />
               <div className="flex flex-col gap-1">
                 <span className="font-medium">
                   Software Development Intern at{" "}
@@ -287,14 +338,7 @@ export default function AboutPage() {
           {/* Work Item 2 */}
           <div className="border border-gray-200 dark:border-gray-700 p-4 rounded-lg flex flex-col gap-2 bg-white dark:bg-gray-900 shadow">
             <div className="flex items-start gap-3">
-              <div className="w-10 h-10 flex-shrink-0 rounded-lg border border-gray-100 dark:border-gray-200 bg-white flex items-center justify-center p-1">
-                <img
-                  src="/_static/logos/Fubon.png"
-                  alt="Fubon logo"
-                  className="w-full h-full object-contain"
-                  onError={(e) => { e.currentTarget.parentElement!.style.display = "none"; }}
-                />
-              </div>
+              <OrgLogo src="/_static/logos/Fubon.png" alt="Fubon logo" />
               <div className="flex flex-col gap-1">
                 <span className="font-medium">
                   Cloud Engineer Intern at{" "}
@@ -335,14 +379,7 @@ export default function AboutPage() {
           {/* Work Item 3 */}
           <div className="border border-gray-200 dark:border-gray-700 p-4 rounded-lg flex flex-col gap-2 bg-white dark:bg-gray-900 shadow">
             <div className="flex items-start gap-3">
-              <div className="w-10 h-10 flex-shrink-0 rounded-lg border border-gray-100 dark:border-gray-200 bg-white flex items-center justify-center p-1">
-                <img
-                  src="/_static/logos/NCU.jpg"
-                  alt="NCU logo"
-                  className="w-full h-full object-contain"
-                  onError={(e) => { e.currentTarget.parentElement!.style.display = "none"; }}
-                />
-              </div>
+              <OrgLogo src="/_static/logos/NCU.jpg" alt="NCU logo" />
               <div className="flex flex-col gap-1">
                 <span className="font-medium">
                   Department IT Assistant at{" "}
@@ -476,169 +513,9 @@ export default function AboutPage() {
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {/* Cert Item 1 */}
-          <div className="border border-gray-200 dark:border-gray-700 p-4 rounded-lg flex flex-col gap-2 bg-white dark:bg-gray-900 shadow">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 flex-shrink-0 rounded-lg border border-gray-100 dark:border-gray-200 bg-white flex items-center justify-center p-1">
-                <img
-                  src="/_static/logos/NVIDIA.jpg"
-                  alt="NVIDIA logo"
-                  className="w-full h-full object-contain"
-                  onError={(e) => { e.currentTarget.parentElement!.style.display = "none"; }}
-                />
-              </div>
-              <span className="font-medium">Building LLM Applications With Prompt Engineering</span>
-            </div>
-            <span className="text-sm">NVIDIA</span>
-            <span className="text-sm">May 2025</span>
-            <span className="text-sm">ID: k4x5XVScRjeEcqLZ34EQ4Q</span>
-            <div className="flex gap-4 mt-1">
-              <a
-                href="/_static/certifications/NVIDIA Building LLM Applications With Prompt Engineering.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="border-b border-gray-400 hover:border-gray-600 transition-colors dark:border-gray-500 dark:hover:border-gray-300 text-sm"
-              >
-                View Certificate
-              </a>
-            </div>
-          </div>
-
-          {/* Cert Item 2 */}
-          <div className="border border-gray-200 dark:border-gray-700 p-4 rounded-lg flex flex-col gap-2 bg-white dark:bg-gray-900 shadow">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 flex-shrink-0 rounded-lg border border-gray-100 dark:border-gray-200 bg-white flex items-center justify-center p-1">
-                <img
-                  src="/_static/logos/AWS.jpg"
-                  alt="AWS logo"
-                  className="w-full h-full object-contain"
-                  onError={(e) => { e.currentTarget.parentElement!.style.display = "none"; }}
-                />
-              </div>
-              <span className="font-medium">AWS Certified Cloud Practitioner</span>
-            </div>
-            <span className="text-sm">Amazon Web Services</span>
-            <span className="text-sm">Jul 2023</span>
-            <span className="text-sm">ID: 7GNK0DV10FV41P9D</span>
-            <div className="flex gap-4 mt-1">
-              <a
-                href="https://www.credly.com/badges/d4340725-e340-415f-9804-3656fcc551f6"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="border-b border-gray-400 hover:border-gray-600 transition-colors dark:border-gray-500 dark:hover:border-gray-300 text-sm"
-              >
-                View Badge
-              </a>
-              <a
-                href="/_static/certifications/AWS Certified Cloud Practitioner certificate.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="border-b border-gray-400 hover:border-gray-600 transition-colors dark:border-gray-500 dark:hover:border-gray-300 text-sm"
-              >
-                View Certificate
-              </a>
-            </div>
-          </div>
-
-          {/* Cert Item 3 */}
-          <div className="border border-gray-200 dark:border-gray-700 p-4 rounded-lg flex flex-col gap-2 bg-white dark:bg-gray-900 shadow">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 flex-shrink-0 rounded-lg border border-gray-100 dark:border-gray-200 bg-white flex items-center justify-center p-1">
-                <img
-                  src="/_static/logos/Oracle.png"
-                  alt="Oracle logo"
-                  className="w-full h-full object-contain"
-                  onError={(e) => { e.currentTarget.parentElement!.style.display = "none"; }}
-                />
-              </div>
-              <span className="font-medium">Java EE 7 Application Developer</span>
-            </div>
-            <span className="text-sm">Oracle</span>
-            <span className="text-sm">Jul 2022</span>
-            <span className="text-sm">ID: 286101419OCPJEE7AD</span>
-            <div className="flex gap-4 mt-1">
-              <a
-                href="/_static/certifications/Oracle Certified Professional, Java EE 7 Application Developer.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="border-b border-gray-400 hover:border-gray-600 transition-colors dark:border-gray-500 dark:hover:border-gray-300 text-sm"
-              >
-                View Certificate
-              </a>
-            </div>
-          </div>
-
-          {/* Cert Item 4 */}
-          <div className="border border-gray-200 dark:border-gray-700 p-4 rounded-lg flex flex-col gap-2 bg-white dark:bg-gray-900 shadow">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 flex-shrink-0 rounded-lg border border-gray-100 dark:border-gray-200 bg-white flex items-center justify-center p-1">
-                <img
-                  src="/_static/logos/Oracle.png"
-                  alt="Oracle logo"
-                  className="w-full h-full object-contain"
-                  onError={(e) => { e.currentTarget.parentElement!.style.display = "none"; }}
-                />
-              </div>
-              <span className="font-medium">Java SE 8 Programmer OCP</span>
-            </div>
-            <span className="text-sm">Oracle</span>
-            <span className="text-sm">Sep 2021</span>
-            <span className="text-sm">ID: 286101419OCPJSE8</span>
-            <div className="flex gap-4 mt-1">
-              <a
-                href="https://www.credly.com/badges/334c2e93-b7b5-4db3-ac92-1007f921b9d0"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="border-b border-gray-400 hover:border-gray-600 transition-colors dark:border-gray-500 dark:hover:border-gray-300 text-sm"
-              >
-                View Badge
-              </a>
-              <a
-                href="/_static/certifications/Oracle Certified Professional, Java SE 8 Programmer.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="border-b border-gray-400 hover:border-gray-600 transition-colors dark:border-gray-500 dark:hover:border-gray-300 text-sm"
-              >
-                View Certificate
-              </a>
-            </div>
-          </div>
-
-          {/* Cert Item 5 */}
-          <div className="border border-gray-200 dark:border-gray-700 p-4 rounded-lg flex flex-col gap-2 bg-white dark:bg-gray-900 shadow">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 flex-shrink-0 rounded-lg border border-gray-100 dark:border-gray-200 bg-white flex items-center justify-center p-1">
-                <img
-                  src="/_static/logos/Oracle.png"
-                  alt="Oracle logo"
-                  className="w-full h-full object-contain"
-                  onError={(e) => { e.currentTarget.parentElement!.style.display = "none"; }}
-                />
-              </div>
-              <span className="font-medium">Java SE 8 Programmer OCA</span>
-            </div>
-            <span className="text-sm">Oracle</span>
-            <span className="text-sm">Jul 2021</span>
-            <span className="text-sm">ID: 286101419OCAJSE8</span>
-            <div className="flex gap-4 mt-1">
-              <a
-                href="https://www.credly.com/badges/50dfe470-48c0-4336-a8f2-28b02412b50b"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="border-b border-gray-400 hover:border-gray-600 transition-colors dark:border-gray-500 dark:hover:border-gray-300 text-sm"
-              >
-                View Badge
-              </a>
-              <a
-                href="/_static/certifications/Oracle Certified Associate, Java SE 8 Programmer.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="border-b border-gray-400 hover:border-gray-600 transition-colors dark:border-gray-500 dark:hover:border-gray-300 text-sm"
-              >
-                View Certificate
-              </a>
-            </div>
-          </div>
+          {CERTS.map((cert) => (
+            <CertCard key={cert.id} {...cert} />
+          ))}
         </div>
       </div>
 
@@ -650,32 +527,9 @@ export default function AboutPage() {
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="border border-gray-200 dark:border-gray-700 p-4 rounded-lg flex flex-col gap-2 bg-white dark:bg-gray-900 shadow">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 flex-shrink-0 rounded-lg border border-gray-100 dark:border-gray-200 bg-white flex items-center justify-center p-1">
-                <img
-                  src="/_static/logos/TOEIC.png"
-                  alt="TOEIC logo"
-                  className="w-full h-full object-contain"
-                  onError={(e) => { e.currentTarget.parentElement!.style.display = "none"; }}
-                />
-              </div>
-              <span className="font-medium">Blue certificate, score: 810</span>
-            </div>
-            <span className="text-sm">TOEIC</span>
-            <span className="text-sm">Aug 2021</span>
-            <span className="text-sm">ID: 21055942</span>
-            <div className="flex gap-4 mt-1">
-              <a
-                href="/_static/certifications/多益藍色證書.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="border-b border-gray-400 hover:border-gray-600 transition-colors dark:border-gray-500 dark:hover:border-gray-300 text-sm"
-              >
-                View Certificate
-              </a>
-            </div>
-          </div>
+          {LANGUAGE_CERTS.map((cert) => (
+            <CertCard key={cert.id} {...cert} />
+          ))}
         </div>
       </div>
 
