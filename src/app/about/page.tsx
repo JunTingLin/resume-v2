@@ -15,27 +15,39 @@ export default function AboutPage() {
 
         {/* Education Item 1 */}
         <div className="border border-gray-200 dark:border-gray-700 p-6 rounded-lg flex flex-col gap-4 bg-white dark:bg-gray-900 shadow">
-          <span className="font-semibold text-lg">
-            Master in{" "}
-            <a
-              href="https://www.inm.ntu.edu.tw/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-600 dark:text-gray-400 underline"
-            >
-              Computer Science(GINM)
-            </a>{" "}
-            -{" "}
-            <a
-              href="https://www.ntu.edu.tw/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-600 dark:text-gray-400 underline"
-            >
-              National Taiwan University
-            </a>
-          </span>
-          <span className="text-sm text-gray-500 dark:text-gray-400">Sep 2024 - Sep 2026</span>
+          <div className="flex items-start gap-4">
+            <div className="w-12 h-12 flex-shrink-0 rounded-lg border border-gray-100 dark:border-gray-200 bg-white flex items-center justify-center p-1">
+              <img
+                src="/_static/logos/NTU.jpg"
+                alt="NTU logo"
+                className="w-full h-full object-contain"
+                onError={(e) => { e.currentTarget.parentElement!.style.display = "none"; }}
+              />
+            </div>
+            <div className="flex flex-col gap-1">
+              <span className="font-semibold text-lg">
+                Master in{" "}
+                <a
+                  href="https://www.inm.ntu.edu.tw/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-600 dark:text-gray-400 underline"
+                >
+                  Computer Science(GINM)
+                </a>{" "}
+                -{" "}
+                <a
+                  href="https://www.ntu.edu.tw/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-600 dark:text-gray-400 underline"
+                >
+                  National Taiwan University
+                </a>
+              </span>
+              <span className="text-sm text-gray-500 dark:text-gray-400">Sep 2024 - Sep 2026</span>
+            </div>
+          </div>
 
           <ul className="list-inside list-disc pl-4 text-sm space-y-2">
             <li>
@@ -94,29 +106,41 @@ export default function AboutPage() {
 
         {/* Education Item 2 */}
         <div className="border border-gray-200 dark:border-gray-700 p-6 rounded-lg flex flex-col gap-4 bg-white dark:bg-gray-900 shadow">
-          <span className="font-semibold text-lg">
-            Bachelor in{" "}
-            <a
-              href="https://im.mgt.ncu.edu.tw/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-600 dark:text-gray-400 underline"
-            >
-              Management Information System(MIS)
-            </a>{" "}
-            -{" "}
-            <a
-              href="https://www.ncu.edu.tw/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-600 dark:text-gray-400 underline"
-            >
-              National Central University
-            </a>
-          </span>
-          <span className="text-sm text-gray-500 dark:text-gray-400">
-            Sep 2020 - Jun 2024
-          </span>
+          <div className="flex items-start gap-4">
+            <div className="w-12 h-12 flex-shrink-0 rounded-lg border border-gray-100 dark:border-gray-200 bg-white flex items-center justify-center p-1">
+              <img
+                src="/_static/logos/NCU.jpg"
+                alt="NCU logo"
+                className="w-full h-full object-contain"
+                onError={(e) => { e.currentTarget.parentElement!.style.display = "none"; }}
+              />
+            </div>
+            <div className="flex flex-col gap-1">
+              <span className="font-semibold text-lg">
+                Bachelor in{" "}
+                <a
+                  href="https://im.mgt.ncu.edu.tw/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-600 dark:text-gray-400 underline"
+                >
+                  Management Information System(MIS)
+                </a>{" "}
+                -{" "}
+                <a
+                  href="https://www.ncu.edu.tw/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-600 dark:text-gray-400 underline"
+                >
+                  National Central University
+                </a>
+              </span>
+              <span className="text-sm text-gray-500 dark:text-gray-400">
+                Sep 2020 - Jun 2024
+              </span>
+            </div>
+          </div>
 
           <ul className="list-inside list-disc pl-4 text-sm space-y-2">
             <li>
@@ -206,24 +230,32 @@ export default function AboutPage() {
         <div className="flex flex-col gap-6">
           {/* Work Item 1 */}
           <div className="border border-gray-200 dark:border-gray-700 p-4 rounded-lg flex flex-col gap-2 bg-white dark:bg-gray-900 shadow">
-            <span className="font-medium">
-              Software Development Intern at {" "}
-              <a
-                href="https://www.trendmicro.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block border-b border-gray-400 hover:border-gray-600
-                           transition-colors dark:border-gray-500 dark:hover:border-gray-300"
-              >
-                Trend Micro
-              </a>
-            </span>
-
-            <span className="text-sm text-gray-500 dark:text-gray-400">
-              WSE Team
-            </span>
-
-            <span className="text-sm">Jul 2025 - Aug 2025</span>
+            <div className="flex items-start gap-3">
+              <div className="w-10 h-10 flex-shrink-0 rounded-lg border border-gray-100 dark:border-gray-200 bg-white flex items-center justify-center p-1">
+                <img
+                  src="/_static/logos/Trend Micro.png"
+                  alt="Trend Micro logo"
+                  className="w-full h-full object-contain"
+                  onError={(e) => { e.currentTarget.parentElement!.style.display = "none"; }}
+                />
+              </div>
+              <div className="flex flex-col gap-1">
+                <span className="font-medium">
+                  Software Development Intern at{" "}
+                  <a
+                    href="https://www.trendmicro.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block border-b border-gray-400 hover:border-gray-600
+                               transition-colors dark:border-gray-500 dark:hover:border-gray-300"
+                  >
+                    Trend Micro
+                  </a>
+                </span>
+                <span className="text-sm text-gray-500 dark:text-gray-400">WSE Team</span>
+                <span className="text-sm">Jul 2025 - Aug 2025</span>
+              </div>
+            </div>
 
             <div className="text-sm space-y-3">
               <div>
@@ -252,26 +284,34 @@ export default function AboutPage() {
           </div>
 
 
-          {/* Work Item 1 */}
+          {/* Work Item 2 */}
           <div className="border border-gray-200 dark:border-gray-700 p-4 rounded-lg flex flex-col gap-2 bg-white dark:bg-gray-900 shadow">
-            <span className="font-medium">
-              Cloud Engineer Intern at{" "}
-              <a
-                href="https://www.fubon.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block border-b border-gray-400 hover:border-gray-600
-                           transition-colors dark:border-gray-500 dark:hover:border-gray-300"
-              >
-                Taipei Fubon Commercial Bank
-              </a>
-            </span>
-
-            <span className="text-sm text-gray-500 dark:text-gray-400">
-              Digital Technology R&D Department
-            </span>
-
-            <span className="text-sm">Jul 2024 - Aug 2024</span>
+            <div className="flex items-start gap-3">
+              <div className="w-10 h-10 flex-shrink-0 rounded-lg border border-gray-100 dark:border-gray-200 bg-white flex items-center justify-center p-1">
+                <img
+                  src="/_static/logos/Fubon.png"
+                  alt="Fubon logo"
+                  className="w-full h-full object-contain"
+                  onError={(e) => { e.currentTarget.parentElement!.style.display = "none"; }}
+                />
+              </div>
+              <div className="flex flex-col gap-1">
+                <span className="font-medium">
+                  Cloud Engineer Intern at{" "}
+                  <a
+                    href="https://www.fubon.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block border-b border-gray-400 hover:border-gray-600
+                               transition-colors dark:border-gray-500 dark:hover:border-gray-300"
+                  >
+                    Taipei Fubon Commercial Bank
+                  </a>
+                </span>
+                <span className="text-sm text-gray-500 dark:text-gray-400">Digital Technology R&D Department</span>
+                <span className="text-sm">Jul 2024 - Aug 2024</span>
+              </div>
+            </div>
 
             <div className="text-sm space-y-3">
               <div>
@@ -292,24 +332,34 @@ export default function AboutPage() {
             </div>
           </div>
 
-          {/* Work Item 2 */}
+          {/* Work Item 3 */}
           <div className="border border-gray-200 dark:border-gray-700 p-4 rounded-lg flex flex-col gap-2 bg-white dark:bg-gray-900 shadow">
-            <span className="font-medium">
-              Department IT Assistant at{" "}
-              <a
-                href="https://www.ncu.edu.tw/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block border-b border-gray-400 hover:border-gray-600
-                           transition-colors dark:border-gray-500 dark:hover:border-gray-300"
-              >
-                National Central University
-              </a>
-            </span>
-            <span className="text-sm text-gray-500 dark:text-gray-400">
-              Institute of Applied Geology
-            </span>
-            <span className="text-sm">Sep 2022 - Jun 2024</span>
+            <div className="flex items-start gap-3">
+              <div className="w-10 h-10 flex-shrink-0 rounded-lg border border-gray-100 dark:border-gray-200 bg-white flex items-center justify-center p-1">
+                <img
+                  src="/_static/logos/NCU.jpg"
+                  alt="NCU logo"
+                  className="w-full h-full object-contain"
+                  onError={(e) => { e.currentTarget.parentElement!.style.display = "none"; }}
+                />
+              </div>
+              <div className="flex flex-col gap-1">
+                <span className="font-medium">
+                  Department IT Assistant at{" "}
+                  <a
+                    href="https://www.ncu.edu.tw/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block border-b border-gray-400 hover:border-gray-600
+                               transition-colors dark:border-gray-500 dark:hover:border-gray-300"
+                  >
+                    National Central University
+                  </a>
+                </span>
+                <span className="text-sm text-gray-500 dark:text-gray-400">Institute of Applied Geology</span>
+                <span className="text-sm">Sep 2022 - Jun 2024</span>
+              </div>
+            </div>
 
             <ul className="list-inside list-disc pl-4 text-sm space-y-1">
               <li>Built and managed websites using WordPress.</li>
@@ -428,7 +478,17 @@ export default function AboutPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Cert Item 1 */}
           <div className="border border-gray-200 dark:border-gray-700 p-4 rounded-lg flex flex-col gap-2 bg-white dark:bg-gray-900 shadow">
-            <span className="font-medium">Building LLM Applications With Prompt Engineering</span>
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 flex-shrink-0 rounded-lg border border-gray-100 dark:border-gray-200 bg-white flex items-center justify-center p-1">
+                <img
+                  src="/_static/logos/NVIDIA.jpg"
+                  alt="NVIDIA logo"
+                  className="w-full h-full object-contain"
+                  onError={(e) => { e.currentTarget.parentElement!.style.display = "none"; }}
+                />
+              </div>
+              <span className="font-medium">Building LLM Applications With Prompt Engineering</span>
+            </div>
             <span className="text-sm">NVIDIA</span>
             <span className="text-sm">May 2025</span>
             <span className="text-sm">ID: k4x5XVScRjeEcqLZ34EQ4Q</span>
@@ -446,7 +506,17 @@ export default function AboutPage() {
 
           {/* Cert Item 2 */}
           <div className="border border-gray-200 dark:border-gray-700 p-4 rounded-lg flex flex-col gap-2 bg-white dark:bg-gray-900 shadow">
-            <span className="font-medium">AWS Certified Cloud Practitioner</span>
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 flex-shrink-0 rounded-lg border border-gray-100 dark:border-gray-200 bg-white flex items-center justify-center p-1">
+                <img
+                  src="/_static/logos/AWS.jpg"
+                  alt="AWS logo"
+                  className="w-full h-full object-contain"
+                  onError={(e) => { e.currentTarget.parentElement!.style.display = "none"; }}
+                />
+              </div>
+              <span className="font-medium">AWS Certified Cloud Practitioner</span>
+            </div>
             <span className="text-sm">Amazon Web Services</span>
             <span className="text-sm">Jul 2023</span>
             <span className="text-sm">ID: 7GNK0DV10FV41P9D</span>
@@ -472,7 +542,17 @@ export default function AboutPage() {
 
           {/* Cert Item 3 */}
           <div className="border border-gray-200 dark:border-gray-700 p-4 rounded-lg flex flex-col gap-2 bg-white dark:bg-gray-900 shadow">
-            <span className="font-medium">Java EE 7 Application Developer</span>
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 flex-shrink-0 rounded-lg border border-gray-100 dark:border-gray-200 bg-white flex items-center justify-center p-1">
+                <img
+                  src="/_static/logos/Oracle.png"
+                  alt="Oracle logo"
+                  className="w-full h-full object-contain"
+                  onError={(e) => { e.currentTarget.parentElement!.style.display = "none"; }}
+                />
+              </div>
+              <span className="font-medium">Java EE 7 Application Developer</span>
+            </div>
             <span className="text-sm">Oracle</span>
             <span className="text-sm">Jul 2022</span>
             <span className="text-sm">ID: 286101419OCPJEE7AD</span>
@@ -490,7 +570,17 @@ export default function AboutPage() {
 
           {/* Cert Item 4 */}
           <div className="border border-gray-200 dark:border-gray-700 p-4 rounded-lg flex flex-col gap-2 bg-white dark:bg-gray-900 shadow">
-            <span className="font-medium">Java SE 8 Programmer OCP</span>
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 flex-shrink-0 rounded-lg border border-gray-100 dark:border-gray-200 bg-white flex items-center justify-center p-1">
+                <img
+                  src="/_static/logos/Oracle.png"
+                  alt="Oracle logo"
+                  className="w-full h-full object-contain"
+                  onError={(e) => { e.currentTarget.parentElement!.style.display = "none"; }}
+                />
+              </div>
+              <span className="font-medium">Java SE 8 Programmer OCP</span>
+            </div>
             <span className="text-sm">Oracle</span>
             <span className="text-sm">Sep 2021</span>
             <span className="text-sm">ID: 286101419OCPJSE8</span>
@@ -516,7 +606,17 @@ export default function AboutPage() {
 
           {/* Cert Item 5 */}
           <div className="border border-gray-200 dark:border-gray-700 p-4 rounded-lg flex flex-col gap-2 bg-white dark:bg-gray-900 shadow">
-            <span className="font-medium">Java SE 8 Programmer OCA</span>
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 flex-shrink-0 rounded-lg border border-gray-100 dark:border-gray-200 bg-white flex items-center justify-center p-1">
+                <img
+                  src="/_static/logos/Oracle.png"
+                  alt="Oracle logo"
+                  className="w-full h-full object-contain"
+                  onError={(e) => { e.currentTarget.parentElement!.style.display = "none"; }}
+                />
+              </div>
+              <span className="font-medium">Java SE 8 Programmer OCA</span>
+            </div>
             <span className="text-sm">Oracle</span>
             <span className="text-sm">Jul 2021</span>
             <span className="text-sm">ID: 286101419OCAJSE8</span>
@@ -551,7 +651,17 @@ export default function AboutPage() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="border border-gray-200 dark:border-gray-700 p-4 rounded-lg flex flex-col gap-2 bg-white dark:bg-gray-900 shadow">
-            <span className="font-medium">Blue certificate, score: 810</span>
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 flex-shrink-0 rounded-lg border border-gray-100 dark:border-gray-200 bg-white flex items-center justify-center p-1">
+                <img
+                  src="/_static/logos/TOEIC.png"
+                  alt="TOEIC logo"
+                  className="w-full h-full object-contain"
+                  onError={(e) => { e.currentTarget.parentElement!.style.display = "none"; }}
+                />
+              </div>
+              <span className="font-medium">Blue certificate, score: 810</span>
+            </div>
             <span className="text-sm">TOEIC</span>
             <span className="text-sm">Aug 2021</span>
             <span className="text-sm">ID: 21055942</span>
