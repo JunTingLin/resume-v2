@@ -428,13 +428,31 @@ export default function AboutPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Cert Item 1 */}
           <div className="border border-gray-200 dark:border-gray-700 p-4 rounded-lg flex flex-col gap-2 bg-white dark:bg-gray-900 shadow">
+            <span className="font-medium">Building LLM Applications With Prompt Engineering</span>
+            <span className="text-sm">NVIDIA</span>
+            <span className="text-sm">May 2025</span>
+            <span className="text-sm">ID: k4x5XVScRjeEcqLZ34EQ4Q</span>
+            <div className="flex gap-4 mt-1">
+              <a
+                href="/_static/certifications/NVIDIA Building LLM Applications With Prompt Engineering.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="border-b border-gray-400 hover:border-gray-600 transition-colors dark:border-gray-500 dark:hover:border-gray-300 text-sm"
+              >
+                View Certificate
+              </a>
+            </div>
+          </div>
+
+          {/* Cert Item 2 */}
+          <div className="border border-gray-200 dark:border-gray-700 p-4 rounded-lg flex flex-col gap-2 bg-white dark:bg-gray-900 shadow">
             <span className="font-medium">AWS Certified Cloud Practitioner</span>
             <span className="text-sm">Amazon Web Services</span>
             <span className="text-sm">Jul 2023</span>
             <span className="text-sm">ID: 7GNK0DV10FV41P9D</span>
             <div className="flex gap-4 mt-1">
               <a
-                href="https://www.credly.com/badges/50dfe470-48c0-4336-a8f2-28b02412b50b"
+                href="https://www.credly.com/badges/d4340725-e340-415f-9804-3656fcc551f6"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="border-b border-gray-400 hover:border-gray-600 transition-colors dark:border-gray-500 dark:hover:border-gray-300 text-sm"
@@ -452,7 +470,7 @@ export default function AboutPage() {
             </div>
           </div>
 
-          {/* Cert Item 2 */}
+          {/* Cert Item 3 */}
           <div className="border border-gray-200 dark:border-gray-700 p-4 rounded-lg flex flex-col gap-2 bg-white dark:bg-gray-900 shadow">
             <span className="font-medium">Java EE 7 Application Developer</span>
             <span className="text-sm">Oracle</span>
@@ -470,7 +488,7 @@ export default function AboutPage() {
             </div>
           </div>
 
-          {/* Cert Item 3 */}
+          {/* Cert Item 4 */}
           <div className="border border-gray-200 dark:border-gray-700 p-4 rounded-lg flex flex-col gap-2 bg-white dark:bg-gray-900 shadow">
             <span className="font-medium">Java SE 8 Programmer OCP</span>
             <span className="text-sm">Oracle</span>
@@ -496,7 +514,7 @@ export default function AboutPage() {
             </div>
           </div>
 
-          {/* Cert Item 4 */}
+          {/* Cert Item 5 */}
           <div className="border border-gray-200 dark:border-gray-700 p-4 rounded-lg flex flex-col gap-2 bg-white dark:bg-gray-900 shadow">
             <span className="font-medium">Java SE 8 Programmer OCA</span>
             <span className="text-sm">Oracle</span>
@@ -521,8 +539,17 @@ export default function AboutPage() {
               </a>
             </div>
           </div>
+        </div>
+      </div>
 
-          {/* Cert Item 5 */}
+      {/* Language Certifications */}
+      <div className="flex flex-col gap-4">
+        <h2 className="text-xl font-semibold flex items-center gap-2">
+          <span>💬</span>
+          <span>Language</span>
+        </h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="border border-gray-200 dark:border-gray-700 p-4 rounded-lg flex flex-col gap-2 bg-white dark:bg-gray-900 shadow">
             <span className="font-medium">Blue certificate, score: 810</span>
             <span className="text-sm">TOEIC</span>
