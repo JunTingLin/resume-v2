@@ -5,9 +5,9 @@ import Image from "next/image";
 type Props = {
   project: {
     title: string;
-    repo: string;
-    youtube: string;
-    thumbnail: string;
+    repo?: string;
+    youtube?: string;
+    thumbnail?: string;
     description: string;
     highlights?: readonly string[];
   };
@@ -54,12 +54,14 @@ export const ProjectCard = ({ project }: Props) => {
         )}
         
         <div className="flex items-center pt-4 gap-4">
-          <SocialLink
-            icon={GitHubIcon}
-            href={project.repo}
-            className="h-6 w-6 flex-none"
-          />
-          {project.youtube && project.youtube.trim() !== "" && (
+          {project.repo && (
+            <SocialLink
+              icon={GitHubIcon}
+              href={project.repo}
+              className="h-6 w-6 flex-none"
+            />
+          )}
+          {project.youtube && (
             <SocialLink
               icon={YouTubeIcon}
               href={project.youtube}

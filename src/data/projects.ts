@@ -1,8 +1,7 @@
 export const PROJECTS = [
   {
     title: "Multimodal Fusion of News Features in Deep Reinforcement Learning Portfolio Optimization",
-    repo: "",
-    youtube: "",
+    repo: "https://github.com/JunTingLin/DeepTrader",
     thumbnail: "/_static/projects/Trend.png",
     description:
       "This study extends VisionTrader by incorporating news information through two complementary paths: extracting FinBERT-based sentiment scores as additional input features, and fusing news embeddings with price-volume representations via Concatenation, Gating Mechanism, and Cross-Attention. Evaluated robustness of each fusion strategy across different time periods; ongoing research.",
@@ -11,7 +10,6 @@ export const PROJECTS = [
   {
     title: "VisionTrader: Applying Deep Reinforcement Learning to Incorporate Vision Time Series into Portfolio Optimization",
     repo: "https://github.com/JunTingLin/DeepTrader",
-    youtube: "",
     thumbnail: "/_static/projects/VisionTrader02.png",
     description:
       "Addresses instability in DRL-based portfolio optimization by incorporating enhanced market features and technical indicators. Uses Vision Transformer (ViT) to capture cross-asset and temporal relationships, demonstrating superior performance and stability across different markets and time periods.",
@@ -20,7 +18,6 @@ export const PROJECTS = [
   {
     title: "TSMC Cloud Native: Attendance System",
     repo: "https://github.com/JunTingLin/Attendance-System-API",
-    youtube: "",
     thumbnail: "/_static/projects/TSMC Cloud Native.png",
     description:
       "A cloud-native attendance management system built with Spring Boot backend and Terraform-managed GCP infrastructure. Features include JWT-secured APIs, automated CI/CD with Cloud Build, and deployment on Cloud Run with Cloud SQL integration.",
@@ -29,7 +26,6 @@ export const PROJECTS = [
   {
     title: "Stock Automatic Trading Robot for Taiwan Market",
     repo: "https://github.com/JunTingLin/stock-analysis",
-    youtube: "",
     thumbnail: "/_static/projects/Stock Automatic Trading Robot.png",
     description:
       "This project uses FinLab's real-time data to design and backtest trading strategies. Results, including account performance and monthly returns, are compiled into HTML reports and delivered via LINE Notify.",
@@ -66,8 +62,6 @@ export const OPEN_SOURCE_CONTRIBUTIONS = [
   {
     title: "Add no-auth fallback support for OpenSearch clusters without authentication",
     repo: "https://github.com/opensearch-project/opensearch-mcp-server-py",
-    youtube: "",
-    thumbnail: "",
     description:
       "Introduced OPENSEARCH_NO_AUTH environment variable to allow connections to OpenSearch clusters that require no authentication, with validation order placed before boto3 auth to avoid unnecessary AWS requests.",
     highlights: ["PR #73"],
