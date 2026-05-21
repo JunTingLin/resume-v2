@@ -61,3 +61,15 @@ export const PROJECTS = [
   },
   
 ] as const;
+
+export const OPEN_SOURCE_CONTRIBUTIONS = [
+  {
+    title: "Add no-auth fallback support for OpenSearch clusters without authentication",
+    repo: "https://github.com/opensearch-project/opensearch-mcp-server-py",
+    youtube: "",
+    thumbnail: "",
+    description:
+      "Introduced OPENSEARCH_NO_AUTH environment variable to allow connections to OpenSearch clusters that require no authentication, with validation order placed before boto3 auth to avoid unnecessary AWS requests.",
+    highlights: ["PR #73"],
+  },
+] as const;

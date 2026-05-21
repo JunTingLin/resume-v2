@@ -1,10 +1,16 @@
 import { GitHubIcon, YouTubeIcon } from "@/components/icons";
 import { SocialLink } from "@/components/social-link";
-import { PROJECTS } from "@/data/projects";
 import Image from "next/image";
 
 type Props = {
-  project: (typeof PROJECTS)[number];
+  project: {
+    title: string;
+    repo: string;
+    youtube: string;
+    thumbnail: string;
+    description: string;
+    highlights?: readonly string[];
+  };
 };
 
 export const ProjectCard = ({ project }: Props) => {
@@ -13,14 +19,16 @@ export const ProjectCard = ({ project }: Props) => {
       className="flex cursor-pointer flex-col rounded-xl transition hover:bg-zinc-50 hover:dark:bg-zinc-800/50"
       key={project.title}
     >
-      <Image
-        src={project.thumbnail}
-        alt={`Logo of ${project.title}`}
-        className="h-50 w-full rounded-t-lg object-cover bg-no-repeat"
-        width={0}
-        height={0}
-        unoptimized
-      />
+      {project.thumbnail && (
+        <Image
+          src={project.thumbnail}
+          alt={`Logo of ${project.title}`}
+          className="h-50 w-full rounded-t-lg object-cover bg-no-repeat"
+          width={0}
+          height={0}
+          unoptimized
+        />
+      )}
       <div className="p-4">
         <a className="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
           {project.title}
