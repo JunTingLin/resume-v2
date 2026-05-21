@@ -1,6 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
-import { PROJECTS } from "@/data/projects";
+import { PROJECTS, OPEN_SOURCE_CONTRIBUTIONS } from "@/data/projects";
 import { siteMetadata } from "@/data/siteMetadata";
 
 const BIO_PATH = path.join(process.cwd(), "src", "data", "bio.md");
@@ -12,10 +12,22 @@ function formatProjects(): string {
       p.description,
       `- Repo: ${p.repo}`,
     ];
-    if (p.youtube) lines.push(`- Video: ${p.youtube}`);
+    if ("youtube" in p && p.youtube) lines.push(`- Video: ${p.youtube}`);
     if (p.highlights && p.highlights.length > 0) {
       lines.push(`- Highlights: ${p.highlights.join(", ")}`);
     }
+    return lines.join("\n");
+  }).join("\n\n");
+}
+
+function formatOpenSourceContributions(): string {
+  return OPEN_SOURCE_CONTRIBUTIONS.map((c, i) => {
+    const lines = [
+      `### Contribution ${i + 1}: ${c.title}`,
+      c.description,
+      `- Repo: ${c.repo}`,
+      `- PR: ${c.highlights.join(", ")}`,
+    ];
     return lines.join("\n");
   }).join("\n\n");
 }
@@ -55,5 +67,9 @@ ${bio}
 # === PROJECTS (structured data; may overlap with BIO) ===
 
 ${formatProjects()}
+
+# === OPEN SOURCE CONTRIBUTIONS ===
+
+${formatOpenSourceContributions()}
 `;
 }
